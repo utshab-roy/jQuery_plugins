@@ -11,19 +11,16 @@
     <link rel="stylesheet" href="../../../main.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!--<link rel="stylesheet" href="css/animate.css">-->
-    <!--<link rel="stylesheet" href="css/style.css">-->
 
-
-    <title>Basic Demo</title>
+    <title>Mousewheel Demo</title>
 </head>
 <body>
 <div class="container">
-    <h1>Basic Demo</h1>
+    <h1>Mousewheel Demo</h1>
     <hr>
     <div class="row">
         <div class="col-12">
-            <div class="owl-carousel owl-theme basic_slider">
+            <div class="owl-carousel owl-theme mousewheel_slider">
                 <img class="img" src="../../../images/books1.jpg">
                 <img class="img" src="../../../images/books2.jpg">
                 <img class="img" src="../../../images/books3.jpg">
@@ -39,59 +36,42 @@
             </div>
             <h3>Include CSS</h3>
             <p>First of all we have to add these tow css file into HTML head</p>
-            <pre>
-                <code>
-                    &lt;link rel="stylesheet" href="path/to/owl.carousel.min.css"&gt;
-                    &lt;link rel="stylesheet" href="path/to/owl.theme.default.min.css"&gt;
-                </code>
-            </pre>
+            <script src="https://pastebin.com/embed_js/EtegCtww"></script>
 
             <h3>Include JS</h3>
             <p>After that we have to add the jQuery and the <code>owl.carousel.min.js</code> into the footer.</p>
-            <pre>
-                <code>
-                    &lt;script src="path/to/jquery.min.js"&gt;&lt;/script&gt;
-                    &lt;script src="path/to/owl.carousel.min.js"&gt;&lt;/script&gt;
-                </code>
-            </pre>
+            <p>To have the mousewheel function we must include <code>jquery.mousewheel.js</code> which is an external js library.</p>
+
+            <script src="https://pastebin.com/embed_js/kTZuMkGX"></script>
 
             <h3>Setup HTML</h3>
             <p>You don't need any special markup. All you need is to wrap your divs(owl works with any type
                 element a/img/span..) inside the container element <code> &lt;div class="owl-carousel"&gt;</code>. Class "owl-carousel"
-            is mandatory to apply proper styles that come from owl.carousel.css file. If you want the default nav
-            controls like dots or buttons, you must also include the "owl-theme" class on that same div.</p>
-            <pre>
-                <code>
-                    &lt;div class="owl-carousel owl-theme"&gt;
-                        &lt;img class="img" src="path/to/image.jpg"&gt;
-                        &lt;img class="img" src="path/to/image.jpg"&gt;
-                        &lt;img class="img" src="path/to/image.jpg"&gt;
-                        &lt;img class="img" src="path/to/image.jpg"&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+                is mandatory to apply proper styles that come from owl.carousel.css file. If you want the default nav
+                controls like dots or buttons, you must also include the "owl-theme" class on that same div.</p>
+
+            <script src="https://pastebin.com/embed_js/DdXx9Ts6"></script>
 
             <h3>Call the plugin</h3>
             <p>Now call the Owl initializer function and your carousel is ready.</p>
             <div class="row">
                 <div class="col-6">
-                    <script src="https://gist.github.com/utshabroy/f741240e245596a439c8b8fa9c1fa741.js"></script>
+                    <script src="https://gist.github.com/utshabroy/93876b19dbe4137734e586d251ccf0df.js"></script>
                 </div>
                 <div class="col-6">
                     <!--main.css file is responsible for the style-->
                     <div class="bs-callout bs-callout-warning">
                         <h4>Note:</h4>
-                        <p>It is noted that <code>&lt;div class="owl-carousel"&gt;</code> is mandatory to apply proper styles. </p>
+                        <p>Note that <code>&lt;script src="js/jquery.mousewheel.js"&gt;&lt;/script&gt;</code> is mandatory to apply mousewheel function. </p>
                         <ul>
-                            <li>Loop: is a boolean variable. It determines to cycle through all the images.</li>
-                            <li>responsive: Limit of width pixel to show the number of images at one time.</li>
-                            <li>Items: Number of item.</li>
-                            <li>Nav: is a boolean variable which creates the next and prev indicator.</li>
+                            <li><strong>autoplay:</strong> is responsible for automatic slide.</li>
+                            <li><strong>autoplayHoverPause:</strong>This will pause the image sliding while hovering mouse on image.</li>
+                            <li><strong>Items:</strong> Number of item.</li>
+                            <li><strong>smartSpeed:</strong> is the sliding time while using the mousewheel.</li>
+                            <li><strong>autoplaySpeed:</strong> is the sliding time happen automatically.</li>
                         </ul>
                     </div>
-                    <!--<script src="https://pastebin.com/embed_js/90ZV8jVp"></script>-->
                     <!--<script src="https://ideone.com/e.js/MzlyG9" type="text/javascript" ></script>-->
-                    <!--<script src="https://pastebin.com/embed_js/Jbz01Cif"></script>-->
                 </div>
             </div>
 
