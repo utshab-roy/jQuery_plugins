@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../main.css">
+
+    <title>Countdown Advance Demo</title>
+</head>
+<body>
+<div class="container">
+    <h1>Countdown Advance Demo</h1>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <!--*********-->
+            <section>
+                <div class="text-center">
+                    <div class="countdown">
+                        <h1 class="display-1"><span id="advance_clock"></span></h1>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-sm" id="pause_btn">Pause</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="resume_btn">Resume</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="time_set_btn">1 min</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="reset_btn">Reset</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="extra_time_btn">Extra time</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="cut_time_btn">Cut time</button>
+
+                </div>
+
+                <hr/>
+                <h3 class="mt-5">Rules</h3>
+                <ul class="list-style">
+                    <li>Pause button will pause the countdown</li>
+                    <li>Resume button will resume the countdown</li>
+                    <li>1 min button will set the countdown to 1 min</li>
+                    <li>Reset will set the countdown value to 7 second</li>
+                    <li>Extra time button will add extra 1 min including remaining time</li>
+                    <li>Cut time button will reduce 10 second form the countdown</li>
+                </ul>
+            </section>
+
+            <h3 class="mt-5">Include JS</h3>
+            <p>Two JS file is required to run this countdown. One is the jQuery <code>jQuery.min.js</code> and
+                another file is <code>jquery.countdown.min.js</code>. We need to include it into the footer.</p>
+
+            <script src="https://pastebin.com/embed_js/9FKeFuWU"></script>
+
+            <h3 class="mt-5">Setup HTML</h3>
+            <p>The HTML setup is very simple. All we need is a span just like this...</p>
+
+            <script src="https://pastebin.com/embed_js/FrVDeePz"></script>
+
+            <section>
+                <h3 class="mt-5">Call the plugin</h3>
+                <p>Now call the Countdown initializer function and your countdown will start to run.</p>
+                <div class="row">
+                    <div class="col-6">
+                        <script src="https://gist.github.com/utshabroy/4a71757e794b5ead9d65d29f98b61784.js"></script>
+                    </div>
+                    <div class="col-6">
+                        <!--main.css file is responsible for the style-->
+                        <div class="bs-callout bs-callout-warning">
+                            <h4>Note:</h4>
+                            <p>Note that <code>var current_time = new Date().getTime();</code> is a time object. We must
+                                pass a time object
+                                as an argument to the countdown function in order to work properly.</p>
+                            <ul>
+                                <li><strong>Variable:</strong> Time variable is javaScript default date object variable
+                                    which gives timestamp value.
+                                </li>
+                                <li><strong>Format:</strong>Time format should be like this <code>var format =
+                                    '%H:%M:%S';</code></li>
+                                <li><strong>ChangeFormat:</strong>Format can be changed like this: <code>format = '%-d
+                                    day%!d ' + format;</code></li>
+                                <li><strong>Events:</strong>There are lots of events available in order to manipulate
+                                    the counter.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <hr>
+    <a class="btn btn-secondary btn-lg btn-block" href="index.html" role="button">Final Countdown</a>
+    <br><br>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/countdown_main.js"></script>
+</body>
+</html>
